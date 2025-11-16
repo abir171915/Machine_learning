@@ -11,9 +11,13 @@ figure; hold on;
 %               2D plot, using the option 'k+' for the positive
 %               examples and 'ko' for the negative examples.
 %
+%gives me the positive indecises 
 pos = find(y ==1);
+%gives me the indecies with zero
 neg = find(y ==0);
+%for positive instances 
 plot(X(pos,1), X(pos,2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
+%for negative instances
 plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 
 
